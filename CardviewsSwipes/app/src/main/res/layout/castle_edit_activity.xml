@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:fadeScrollbars="false"
+    android:scrollbars="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <EditText
+            android:id="@+id/editTextCastle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Castle Name"
+            android:layout_alignTop="@+id/textViewEditName"
+            android:layout_alignEnd="@+id/editTextLat"
+            android:layout_alignStart="@+id/editTextCastleDesctiption" />
+
+        <EditText
+            android:id="@+id/editImageCastle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="http://"
+            android:layout_alignTop="@+id/textViewEditSource"
+            android:layout_alignEnd="@+id/editTextCastle"
+            android:layout_alignStart="@+id/editTextCastle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Name"
+            android:id="@+id/textViewEditName"
+            android:layout_marginTop="96dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/textViewLong" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Image Source"
+            android:id="@+id/textViewEditSource"
+            android:layout_below="@+id/editTextCastle"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="44dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Description"
+            android:id="@+id/textViewEditDescription"
+            android:layout_below="@+id/editImageCastle"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="44dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Description"
+            android:id="@+id/editTextCastleDesctiption"
+            android:layout_alignTop="@+id/textViewEditDescription"
+            android:layout_toEndOf="@+id/buttonSaveEdit" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:backgroundTint="#008a8a"
+            android:id="@+id/buttonSaveEdit"
+            android:layout_below="@+id/editTextLong"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:id="@+id/textViewLat"
+            android:layout_below="@+id/editTextCastleDesctiption"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="42dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextLat"
+            android:text="0000"
+            android:layout_alignTop="@+id/textViewLat"
+            android:layout_alignEnd="@+id/editTextCastleDesctiption"
+            android:layout_alignStart="@+id/editTextCastleDesctiption" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude"
+            android:id="@+id/textViewLong"
+            android:layout_below="@+id/editTextLat"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="46dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextLong"
+            android:text="0000"
+            android:layout_alignTop="@+id/textViewLong"
+            android:layout_alignEnd="@+id/editTextLat"
+            android:layout_toEndOf="@+id/buttonSaveEdit" />
+    </RelativeLayout>
+
+    </ScrollView>

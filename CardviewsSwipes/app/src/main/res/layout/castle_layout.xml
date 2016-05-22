@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- place this layout anywhere and the imageview and textview will follow. -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/textViewCastle"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/imageViewCastle"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="Castle Name" />
+
+        <ImageView
+            android:id="@+id/imageViewCastle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="400dp"
+            android:maxWidth="400dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="94dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Castle Description"
+            android:id="@+id/textViewCastleDescription"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/textViewCastle"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
